@@ -91,7 +91,7 @@
 
 <section id="backgound">
 <video autoplay muted loop id="myVideo">
-  <source src="assets/video/teaser.mp4" type="video/mp4">
+  <source id="teaser_vide" src="assets/video/teaser_crf20.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
 </section>
@@ -116,13 +116,16 @@
 
     <!-- ======= About Section ======= -->
 
+             <!-- <video poster="assets/video/teaser2.mp4" id="steve" autoplay muted loop width="100%">
+                <source src="assets/video/teaser2.mp4" type="video/mp4"></video>-->
+
     <section id="about">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
-              <!--<video poster="assets/video/teaser.mp4" id="steve" autoplay controls muted loop width="100%">
-                <source src="assets/video/teaser.mp4" type="video/mp4"></video>-->
+
           <div class="col-lg-6 content order-lg-1 order-2">
+
             <h2 class="title">Abstract</h2>
             <p>
               We present DNA-Rendering, a large-scale, high-fidelity repository of neural actor rendering represented by neural implicit fields of human actors.
@@ -134,18 +137,17 @@
             <ul><i class="ri-check-line"></i> 60 synchronous cameras, max 4096 × 3000 resolution, 15fps</ul>
 
             </div>
+
             <!--<div class="icon-box" data-aos="fade-up" data-aos-delay="100">-->
             <div class="col-lg-6 content order-lg-1 order-2 container_home">
                  <center>
-                  <iframe width="100%" height="100%" frameborder='0' allowfullscreen class="video_home"
+                  <iframe width="100%" height="50%" frameborder='0' allowfullscreen class="video_home"
                     src="https://www.youtube.com/embed/3dU-FgN2ycQ">
                   </iframe>
                  </center>
                   <br>
             </div>
             </div>
-
-
 
       </div>
 
@@ -686,6 +688,19 @@
     var btn = document.getElementById("myBtn");
 
     function play_or_pause_function() {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+    }
+
+    var video = document.getElementById("myVideo");
+    var btn = document.getElementById("myBtn");
+
+    function next_function() {
       if (video.paused) {
         video.play();
         btn.innerHTML = "Pause";
