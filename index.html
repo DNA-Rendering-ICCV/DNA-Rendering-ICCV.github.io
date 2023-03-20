@@ -69,8 +69,8 @@
           </li>
           <li class="dropdown"><a href="inner-details.html#services"><span>Benchmark</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="inner-benchmark-novel-view.html">Novel View Benchmark</a></li>
-              <li><a href="inner-benchmark-novel-pose.html">Novel Pose Benchmark</a></li>
+              <li><a>Novel View Benchmark</a></li> <!--href="inner-benchmark-novel-view.html"-->
+              <li><a>Novel Pose Benchmark</a></li> <!--href="inner-benchmark-novel-pose.html"-->
               <li><a href="inner-benchmark-novel-id.html">Novel ID Benchmark</a></li>
               <li><a href="inner-benchmark-cross-dataset.html">Cross Dataset Benchmark</a></li>
             </ul>
@@ -217,16 +217,12 @@
             <p>Resolution</p>
           </div>
 
-        </div>
-          <div class="row">
 
 
-            </div>
 
+            <div class="col-md-6 col-sm-auto">
 
-            <div class="col-md-6 col-sm-12">
-
-              <div class="col-md-12 box wow fadeInRight" data-wow-delay="0.1s">
+              <div class="col-md-12 col-sm-auto box wow fadeInRight" data-wow-delay="0.1s">
                 <a href="inner-details.html#scales"><h4 class="title"> Scales</h4></a>
                 <p class="description">To our knowledge, our dataset far surpasses similar ones in terms of the number of actors, costumes, actions, clarity, and overall data volume.</p>
                 <center>
@@ -236,9 +232,9 @@
               </div>
 
 
-            <div class="col-md-6 col-sm-12">
+            <div class="col-md-6 col-sm-auto">
 
-              <div class="col-md-12 box wow fadeInLeft" data-wow-delay="0.1s">
+              <div class="col-md-12 col-sm-auto box wow fadeInLeft" data-wow-delay="0.1s">
                <a href="inner-details.html#annotations"><h4 class="title">Annotation Pipeline</a></h4>
                 <p class="description">Our dataset comes with off-the-shelf high-precision annotation, including 2D/3D human body keypoints, foreground masks, and SMPL-X models. We have implemented targeted optimization methods to achieve high accuracy in our results.</p>
                 </p>
@@ -247,25 +243,33 @@
 
               </div>
             </div>
+        <!--<div class="section-header">
+          <h3 class="section-title2">Benchmark Support</h3>
 
-            <div class="col-md-6 col-sm-12 ">
-              <div class="col-md-12 box wow fadeInRight" data-wow-delay="0.1s">
+          <span class="section-divider"></span>
+        </div>-->
+
+            <div class="col-md-6 col-sm-auto">
+              <div class="col-md-12 col-sm-auto box wow fadeInRight" data-wow-delay="0.1s">
                 <a href="inner-details.html#services"><h4 class="title">Rendering Benchmark</h4></a>
                 <p class="description">Our dataset supports rendering-based novel view synthesis tasks. Most current human rendering methods can handle easy and medium difficulty levels, but still lack the capabilities to model the hard ones.</p>
-                  <center>
-                  <!--<a href="assets/img/Fig1_2.png"><img src="assets/img/novel_view_exp2.png" height="300"></a><br>-->
+
+                  <center><video poster="assets/video/benchmark/novel-id/KeyPointNerf/liuyan_yf1_dz4.mp4"
+                                  id="steve" autoplay muted loop width="50%">
+                    <source src="assets/video/benchmark/novel-id/KeyPointNerf/liuyan_yf1_dz4.mp4" type="video/mp4"></center>
 
               </div>
 
             </div>
 
 
-            <div class="col-md-6 col-sm-12 ">
-                <div class="col-md-12 box wow fadeInRight" data-wow-delay="0.1s">
+            <div class="col-md-6 col-sm-auto">
+                <div class="col-md-12 col-sm-auto box wow fadeInRight" data-wow-delay="0.1s">
                   <a href="inner-details.html#services"><h4 class="title">Amimation Benchmark</h4></a>
-                  <p class="description">Additionally, our dataset also supports novel pose animation tasks.</p>
-                    <center>
-                    <!--<a href="assets/img/Fig1_2.png"><img src="assets/img/novel_view_exp2.png" height="300"></a><br>-->
+                  <p class="description">Additionally, our dataset also supports novel pose animation tasks.</p><br><br/>
+                    <center><video poster="assets/video/benchmark/novel-pose/humannerf/wangxiaofei_yf3_dz10.mp4"
+                                    id="steve"  autoplay muted loop width="50%">
+                      <source src="assets/video/benchmark/novel-pose/humannerf/wangxiaofei_yf3_dz10.mp4" type="video/mp4"></center>
 
                 </div>
 
@@ -674,14 +678,14 @@
   <!--<script src="assets/js/index.js"></script>-->
 
     <!-- JavaScript Libraries -->
-  <!--<script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/jquery/jquery-migrate.min.js"></script>
   <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="lib/easing/easing.min.js"></script>
   <script src="lib/wow/wow.min.js"></script>
   <script src="lib/superfish/hoverIntent.js"></script>
   <script src="lib/superfish/superfish.min.js"></script>
-  <script src="lib/magnific-popup/magnific-popup.min.js"></script>-->
+  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
   <script>
 
     var video = document.getElementById("myVideo");

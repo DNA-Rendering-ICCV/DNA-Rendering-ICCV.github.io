@@ -72,8 +72,8 @@
           </li>
           <li class="dropdown"><a href="inner-details.html#services"><span>Benchmark</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="inner-benchmark-novel-view.html">Novel View Benchmark</a></li>
-              <li><a href="inner-benchmark-novel-pose.html">Novel Pose Benchmark</a></li>
+              <li><a>Novel View Benchmark</a></li> <!--href="inner-benchmark-novel-view.html"-->
+              <li><a>Novel Pose Benchmark</a></li> <!--href="inner-benchmark-novel-pose.html"-->
               <li><a href="inner-benchmark-novel-id.html">Novel ID Benchmark</a></li>
               <li><a href="inner-benchmark-cross-dataset.html">Cross Dataset Benchmark</a></li>
             </ul>
@@ -320,6 +320,7 @@
               <!--<div class="icon"><a href=""><i class="bi bi-binoculars"></i></a></div>-->
               <h4 class="title"><a href="">Cross Dataset Benchmark</a></h4>
               <!--<p class="description">Cross Dataset xxx</p>-->
+
             </div>
           </div>
                <div class="container container_home">
@@ -378,7 +379,90 @@
   <!--<script src="lib/jquery/jquery-migrate.min.js"></script>-->
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  
+  <script>
+
+$(document).ready(function() {
+    var tab = '0';
+    // Check for click events on the navbar burger icon
+    $(".navbar-burger").click(function() {
+      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+      $(".navbar-burger").toggleClass("is-active");
+      $(".navbar-menu").toggleClass("is-active");
+    });
+
+    $('#tabs li').on('click', function() {
+      var tab = $(this).data('tab');
+
+      $('#tabs li').removeClass('is-active');
+      $(this).addClass('is-active');
+
+      // $('#tab-content p').removeClass('is-active');
+      // $('p[data-content="' + tab + '"]').addClass('is-active');
+      // $('.tab-carousel').s('is-active');
+      // $("."+tab+"-carousel").addClass('is-active');
+
+      if (tab != "0"){
+        for(var i = 1; i <= 2; i++) {
+            document.getElementById(String(i)+"-carousel").style.display = "none";
+        }
+        document.getElementById(tab+"-carousel").style.display = "";
+      }
+      else{
+        for(var i = 1; i <= 2; i++) {
+          document.getElementById(String(i)+"-carousel").style.display = "";
+      }
+      }
+    });
+
+    var options = {
+			slidesToScroll: 1,
+			slidesToShow: 1,
+			loop: true,
+			infinite: true,
+			autoplay: false,
+			autoplaySpeed: 3000,
+    }
+
+    var carousels = bulmaCarousel.attach('.carousel', options);
+		// Initialize all div with carousel class
+
+    // Loop on each carousel initialized
+    for(var i = 0; i < carousels.length; i++) {
+    	// Add listener to  event
+    	carousels[i].on('before:show', state => {
+    		console.log(state);
+    	});
+    }
+
+    // Access to bulmaCarousel instance of an element
+    var element = document.querySelector('#my-element');
+    if (element && element.bulmaCarousel) {
+    	// bulmaCarousel instance is available as element.bulmaCarousel
+    	element.bulmaCarousel.on('before-show', function(state) {
+    		console.log(state);
+    	});
+    }
+
+    /*var player = document.getElementById('interpolation-video');
+    player.addEventListener('loadedmetadata', function() {
+      $('#interpolation-slider').on('input', function(event) {
+        console.log(this.value, player.duration);
+        player.currentTime = player.duration / 100 * this.value;
+      })
+    }, false);*/
+    preloadInterpolationImages();
+/*
+    $('#interpolation-slider').on('input', function(event) {
+      setInterpolationImage(this.value);
+    });
+    setInterpolationImage(0);
+    $('#interpolation-slider').prop('max', NUM_INTERP_FRAMES - 1);
+*/
+    bulmaSlider.attach();
+
+})
+
+  </script>
 
 </body>
 
