@@ -61,11 +61,13 @@
           <li><a class="nav-link scrollto" href="#about">Overview</a></li>
           <li><a class="nav-link scrollto" href="#core-features">Core Features</a></li>
          <li class="dropdown"><a href="inner-details.html#"><span>Details</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
+           <!--
+           <ul>
               <li><a href="inner-details.html#scales">Scales</a></li>
               <li><a href="inner-details.html#annotations">Annotation</a></li>
               <li><a href="inner-details.html#services">Benchmarks</a></li>
             </ul>
+            -->
           </li>
           <li class="dropdown"><a href="inner-details.html#services"><span>Benchmark</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -128,13 +130,12 @@
 
             <h2 class="title">Abstract</h2>
             <p>
-              We present DNA-Rendering, a large-scale, high-fidelity repository of neural actor rendering represented by neural implicit fields of human actors.
+              We present <b>DNA-Rendering</b>, a large-scale, high-fidelity repository of neural actor rendering represented by neural implicit fields of human actors.
               We provide human subjects with
             </p>
-              <ul><i class="ri-check-line"></i> Grand categories of pose actions, body shapes, clothing, accessories, hairdos, object intersection</ul>
-            <ul><i class="ri-check-line"></i> Richly-annotations including 2D/3D human body keypoints, foreground masks</ul>
-            <ul><i class="ri-check-line"></i> SMPL-X models</ul>
-            <ul><i class="ri-check-line"></i> 60 synchronous cameras, max 4096 × 3000 resolution, 15fps</ul>
+              <ul><i class="ri-check-line"></i> <b style="color:#339999";>High Diversity</b>: We collected a total of 500 individuals, with 529 different sets of clothing, 269 different types of daily actions, and 153 different types of special performances, including relevant interactive objects for some actions. </ul>
+            <ul><i class="ri-check-line"></i> <b style="color:#006699";>High Fidelity</b>:We construct professional multi-view system to capture data, which contains 60 synchronous cameras with max 4096 × 3000 resolution， 15fps speed </ul>
+            <ul><i class="ri-check-line"></i> <b style="color:#CC6633";>Rich Annotations</b>:We provide off-the-shelf annotations including 2D/3D human body keypoints, foreground masks and SMPL-X models</ul>
 
             </div>
 
@@ -164,11 +165,12 @@
   </div>
       <div id="1-carousel" class="carousel tab-carousel">
 
-        <div class="item item-steve"><video poster="assets/video/home/20220824_siqigong_m_siqigong_yf1_dz6.mp4" id="steve" autoplay controls muted loop width="100%"><source src="assets/video/home/20220824_siqigong_m_siqigong_yf1_dz6.mp4" type="video/mp4"></video></div>
-          <div class="item item-steve"><video poster="assets/video/home/20220915_yuanyao_f_yuanyao_yf1_dz2.mp4" id="steve" autoplay controls muted loop width="100%"><source src="assets/video/home/20220915_yuanyao_f_yuanyao_yf1_dz2.mp4" type="video/mp4"></video></div>
-          <div class="item item-steve"><video poster="assets/video/home/20220916_yuanhang_f_yuanhang_yf1_dz2.mp4" id="steve" autoplay controls muted loop width="100%"><source src="assets/video/home/20220916_yuanhang_f_yuanhang_yf1_dz2.mp4" type="video/mp4"></video></div>
+
+          <div class="item item-steve"><video poster="assets/video/home/20220815_liuhan_f_liuhan_yf1_dz2.mp4" id="steve" autoplay controls muted loop width="100%"><source src="assets/video/home/20220815_liuhan_f_liuhan_yf1_dz2.mp4" type="video/mp4"></video></div>
           <div class="item item-steve"><video poster="assets/video/home/20221021_liuziyu_m_liuziyu_yf1_dz1.mp4" id="steve" autoplay controls muted loop width="100%"><source src="assets/video/home/20221021_liuziyu_m_liuziyu_yf1_dz1.mp4" type="video/mp4"></video></div>
-        <div class="item item-steve"><video poster="assets/video/home/20221018_wangruochen_f_wangruochen_yf3_dz11.mp4" id="steve" autoplay controls muted loop width="100%"><source src="assets/video/home/20221018_wangruochen_f_wangruochen_yf3_dz11.mp4" type="video/mp4"></video></div>
+        <div class="item item-steve"><video poster="assets/video/home/20220916_yuanhang_f_yuanhang_yf1_dz2.mp4" id="steve" autoplay controls muted loop width="100%"><source src="assets/video/home/20220916_yuanhang_f_yuanhang_yf1_dz2.mp4" type="video/mp4"></video></div>
+        <div class="item item-steve"><video poster="assets/video/home/20221219_YANA_f_YANA_yf2_dz4.mp4" id="steve" autoplay controls muted loop width="100%"><source src="assets/video/home/20221219_YANA_f_YANA_yf2_dz4.mp4" type="video/mp4"></video></div>
+        <div class="item item-steve"><video poster="assets/video/home/20220824_siqigong_m_siqigong_yf1_dz6.mp4" id="steve" autoplay controls muted loop width="100%"><source src="assets/video/home/20220824_siqigong_m_siqigong_yf1_dz6.mp4" type="video/mp4"></video></div>
       </div>
         <p>Our dataset contains 500 actors and covers a wide range of special performances and everyday actions, including a large variety of costumes, makeup, and interaction object types.</p>
 
@@ -219,7 +221,36 @@
           </div>
 
 
+          <div class="col-md-12 box wow fadeInLeft" data-wow-delay="0.1s">
+            <h4 class="title" id="Scales">Scales</a></h4>
+            <p class="description">To our knowledge, our dataset far surpasses similar ones in terms of the number of actors, costumes, actions, clarity, and overall data volume.</p>
+            <center>
+            <a href="assets/img/scale.jpg"><img src="assets/img/scale.jpg" width="1000"></a><br></center>
 
+          </div>
+          <div class="col-md-12 box wow fadeInRight" data-wow-delay="0.1s">
+            <h4 class="title" id="Diversity">Diversity</a></h4>
+            <p class="description">Our dataset covers a diverse range of scenarios, including everyday  and special performances. It includes a total of 529 clothing types and 422 action types, with sufficient difficulty levels in clothing textures and motion complexity. This diversity and difficulty make it suitable for a variety of downstream research tasks. .</p>
+            <center>
+            <a href="assets/img/diversity.jpg"><img src="assets/img/diversity.jpg" width="1000"></a><br></center>
+
+          </div>
+          <div class="col-md-12 box wow fadeInLeft" data-wow-delay="0.1s">
+            <h4 class="title" id="High-quality Annotations">High-quality Annotations</a></h4>
+            <p class="description">Our dataset comes with off-the-shelf high-precision annotation, including 2D/3D human body keypoints, foreground masks, and SMPL-X models. We have specifically optimized our annotations for 3D human body scenarios, resulting in high-quality annotations.</p>
+            <center>
+            <a href="assets/img/annotation.jpg"><img src="assets/img/annotation.jpg" width="1000"></a><br></center>
+
+          </div>
+          <div class="col-md-12 box wow fadeInRight" data-wow-delay="0.1s">
+            <h4 class="title" id="Benchmarks">Benchmarks</a></h4>
+            <p class="description">We have provided the results of various state-of-the-art methods of rendering and animation on our dataset.</p>
+            <center>
+            <a href="assets/img/benchmark.jpg"><img src="assets/img/benchmark.jpg" width="1000"></a><br></center>
+
+          </div>
+
+           <!--
             <div class="col-md-6 col-sm-auto">
 
               <div class="col-md-12 col-sm-auto box wow fadeInRight" data-wow-delay="0.1s">
@@ -268,6 +299,7 @@
                 </div>
 
               </div>
+              -->
 
 
         </div>
@@ -745,7 +777,7 @@ $(document).ready(function() {
 			slidesToScroll: 1,
 			slidesToShow: 3,
 			loop: true,
-			infinite: false,
+			infinite: true,
 			autoplay: false,
 			autoplaySpeed: 3000,
     }
