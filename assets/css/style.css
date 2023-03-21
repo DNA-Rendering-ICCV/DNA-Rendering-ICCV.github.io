@@ -394,9 +394,10 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  /*background: url(../img/no-bg.png) top center;*/
+  /*background: url(../img/nobg.png) top center;*/
   background-size: cover;
   position: relative;
+  z_index: 0
 }
 
 @media (min-width: 1024px) {
@@ -474,6 +475,23 @@ h6 {
 }
 
 #hero .btn-get-started:hover {
+  background: #2dc997;
+  border: 2px solid #2dc997;
+}
+
+#myBtn {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
   background: #2dc997;
   border: 2px solid #2dc997;
 }
@@ -618,8 +636,8 @@ section {
 
 #about .about-container .background {
   min-height: 300px;
-  background: url(../img/about-img.jpg) center top no-repeat;
-  margin-bottom: 10px;
+  /* background: url(../img/about-img.jpg) center top no-repeat;*/
+  margin-bottom: 0px;
 }
 
 #about .about-container .content {
@@ -634,7 +652,7 @@ section {
 
 @media (max-width: 768px) {
   #about .about-container .title {
-    padding-top: 15px;
+    padding-top: 0px;
   }
 }
 
@@ -649,7 +667,7 @@ section {
 #about .about-container .icon-box {
   background: #fff;
   background-size: cover;
-  padding: 0 0 30px 0;
+  padding: 0 0 0px 0;
 }
 
 #about .about-container .icon-box .icon {
@@ -704,8 +722,6 @@ section {
 #features .features-img {
   text-align: center;
   padding-top: 20px;
-  height: auto;
-  max-width: 100%;
 }
 
 #features .features-img img {
@@ -765,13 +781,13 @@ section {
   padding: 80px 0 60px 0;
 }
 
-#features-comparison .counters span {
+#core-features .counters span {
   font-size: 48px;
   display: block;
   color: #2dc997;
 }
 
-#features-comparison .counters p {
+#core-features .counters p {
   padding: 0;
   margin: 0 0 20px 0;
   font-family: "Poppins", sans-serif;
@@ -955,7 +971,7 @@ section {
 --------------------------------*/
 #portfolio {
   background: #f7f7f7;
-  padding: 80px 0;
+  padding: 0px 0;
 }
 
 #portfolio #portfolio-flters {
@@ -999,8 +1015,6 @@ section {
   position: relative;
   top: 0;
   transition: all 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
-  height: auto;
-  max-width: 100%;
 }
 
 #portfolio .portfolio-item .portfolio-info {
@@ -1048,8 +1062,6 @@ section {
 
 #portfolio .portfolio-item:hover img {
   top: -30px;
-  height: auto;
-  max-width: 100%;
 }
 
 #portfolio .portfolio-item:hover .portfolio-info {
@@ -1061,12 +1073,11 @@ section {
 # Portfolio Details
 --------------------------------------------------------------*/
 .portfolio-details {
-  padding-top: 40px;
+  padding-top: 0px;
 }
 
 .portfolio-details .portfolio-details-slider img {
   width: 100%;
-  height: auto;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination {
@@ -1143,7 +1154,6 @@ section {
 
 #team .member .pic img {
   max-width: 100%;
-  height: auto;
 }
 
 #team .member h4 {
@@ -1387,140 +1397,6 @@ tabs{-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-
 
 .ri-check-line:before { content: "\eb7b"; }
 
-
-
-
-
-/*--------------------------------------------------------------
-# Intro Section
---------------------------------------------------------------*/
-.embed-responsive {
-  margin-bottom: 40px;
-}
-
-#intro {
-  width: 100%;
-  height: 100vh;
-  /*background: linear-gradient(45deg, rgba(29, 224, 153, 0.1), rgba(29, 200, 205, 0.8)), url("../img/Teaser.png") center top no-repeat;*/
-  background: url("assets/img/hero_bg.jpg") center top no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-#intro .intro-text {
-  margin: 10em 0 0 0;
-  text-align: center;
-  padding: 20px;
-  background-color: #1dc8cdcc;
-  background-color: #00000066;
-  text-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
-}
-#intro h2 {
-  margin: 30px 0 10px 0;
-  padding: 0 15px;
-  font-size: 48px;
-  font-weight: 400;
-  line-height: 56px;
-  color: #fff;
-}
-
-#intro p {
-  color: #fff;
-  margin-bottom: 20px;
-  padding: 0 15px;
-  font-size: 24px;
-}
-
-#intro .btn-get-started {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 28px;
-  border-radius: 50px;
-  transition: 0.5s;
-  margin: 10px;
-  border: 2px solid #fff;
-  color: #fff;
-}
-
-#intro .btn-get-started:hover {
-  color: #1dc8cd;
-  background: #fff;
-}
-
-#intro .product-screens {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  overflow: hidden;
-  text-align: center;
-  width: 100%;
-  height: 50%;
-}
-
-#intro .product-screens img {
-  box-shadow: 0px -2px 19px 4px rgba(0, 0, 0, 0.29);
-  height: auto;
-  max-width: 100%;
-}
-
-#intro .product-screens .product-screen-1 {
-  position: absolute;
-  z-index: 30;
-  left: calc(50% + 54px);
-  bottom: 0;
-  top: 30px;
-}
-
-#intro .product-screens .product-screen-2 {
-  position: absolute;
-  z-index: 20;
-  left: calc(50% - 154px);
-  bottom: 0;
-  top: 90px;
-}
-
-#intro .product-screens .product-screen-3 {
-  position: absolute;
-  z-index: 10;
-  left: calc(50% - 374px);
-  bottom: 0;
-  top: 150px;
-}
-
-
-#features-comparison img {
-  padding: 0;
-  margin: 0;
-  height: auto;
-  max-width: 100%;
-}
-
-#features-comparison2 img {
-  padding: 0;
-  margin: 0;
-  height: auto;
-  max-width: 100%;
-}
-
-
-.container_home {
-position: relative;
-width: 100%;
-height: 0;
-padding-bottom: 56.25%;
-}
-.video_home {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-}
-
 #myVideo {
   position: absolute;
   right: 0;
@@ -1537,22 +1413,4 @@ height: 100%;
   color: #f1f1f1;
   width: 100%;
   padding: 20px;
-}
-
-
-#myBtn {
-  font-family: "Poppins", sans-serif;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 16px;
-  padding: 10px;
-  border: none;
-  background: #000;
-  color: #fff;
-  cursor: pointer;
-}
-
-#myBtn:hover {
-  background: #2dc997;
-  border: 2px solid #2dc997;
 }
