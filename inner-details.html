@@ -60,17 +60,20 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="index.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="index.html#about">Overview</a></li>
           <li><a class="nav-link scrollto" href="index.html#core-features">Core Features</a></li>
-         <li class="dropdown"><a href="inner-details.html#"><span>Details</span> <i class="bi bi-chevron-down"></i></a>
-           <!--
+         <li class="dropdown active"><a href="inner-details.html#"><span>Details</span> <i class="bi bi-chevron-down"></i></a>
+
            <ul>
-              <li><a href="inner-details.html#scales">Scales</a></li>
-              <li><a href="inner-details.html#annotations">Annotation</a></li>
-              <li><a href="inner-details.html#services">Benchmarks</a></li>
+              <li><a href="inner-details.html#D1">Capture system</a></li>
+              <li><a href="inner-details.html#D2">Hi-res Multiview</a></li>
+              <li><a href="inner-details.html#D3">ID Distribution</a></li>
+              <li><a href="inner-details.html#D4">Action & Clothes Distribution</a></li>
+              <li><a href="inner-details.html#D5">Matting Refinement</a></li>
+              <li><a href="inner-details.html#D6">Testset Feature</a></li>
             </ul>
-            -->
+
           </li>
           <li class="dropdown"><a href="inner-details.html#services"><span>Benchmark</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -129,8 +132,6 @@
   
             <span class="section-divider"></span>-->
            <!-- <p class="section-description">TDW has been used in a number of labs within MIT and Stanford, as well as IBM</p> -->
-          </div>
-  
           <div class="row wow fadeInUp">
             <!--
             <div class="col-lg-12">
@@ -141,149 +142,80 @@
   
             </div>
             -->
+            <div class="row" id="D1">
+
+
+                <div class="col-md-12 box wow fadeInUp" data-wow-delay="0.1s">
+                  <h4 class="title">Capture system</a></h4>
+                  <p class="description">Our capture system is built inside a spherical enclosure with a radius of 5 meters. The capture system utilizes a high-precision mixed camera array consisting of 12 ultra-high resolution industrial cameras with a resolution of 3000 × 4096 pixels, 48 high-end industrial cameras with a resolution of 2048 × 2448 pixels, all with a frame rate of 15fps, and the maximum frame synchronization time difference is less than 2ms. The lighting system uses a circular array of 16 flat light sources.</p>
+                    <table><tr>
+                      <td></td><a href="assets/img/D1_1.png"><img src="assets/img/D1_1.png"  width="38%"></a></tr>
+                      <td></td><a href="assets/img/D1_2.png"><img src="assets/img/D1_2.png"  width="62%"></a></tr>
+                    </tr></table>
+
+                </div>
+
+
+            </div>
+
+            <div class="row" id="D2">
+
+
+                <div class="col-md-12 box wow fadeInUp" data-wow-delay="0.1s">
+                  <h4 class="title">Dataset: Hi-res Multiview</a></h4>
+                  <p class="description">A sample of our high-resolution multi-view human videos.</p>
+                      <td></td><a href="assets/img/D2.png"><img src="assets/img/D2.png"  width="100%"></a></tr>
+
+                </div>
+
+
+            </div>
+
             <div class="row">
 
-              <!---->
-              <!--
-              <div class="col-md-6 col-sm-12">
-
-                <div class="col-md-12 box wow fadeInLeft" data-wow-delay="0.1s">
-                  <h4 class="title">Diversity</a></h4>
-                  <p class="description">xxx</p>
-
-                    <a href="assets/img/diversity.png"><img src="assets/img/diversity.png"  height="200"></a><br>
+                <div class="col-md-12 box wow fadeInUp"  id="D3" data-wow-delay="0.1s">
+                  <h4 class="title">ID Distribution</a></h4>
+                  <p class="description">Our dataset has sufficient diversity in terms of people, clothing, actions, and interactive objects. We collected a total of 500 individuals, with 529 different sets of clothing, 269 different types of daily actions, and 153 different types of special performances, including relevant interactive objects for some actions. </p>
+                  <p class="description">Regarding the people dimension, there were 500 actor instances with a ratio of 4:3:2:1 for Asian, Caucasian, Black, and Hispanic individuals, respectively, with a uniform distribution of gender and wide coverage of age and body shape distribution</p>
+                      <td></td><a href="assets/img/D3.png"><img src="assets/img/D3.png"  width="100%"></a></tr>
 
                 </div>
-              -->
-  
-  
-              </div>
-  
-              
-                  <!--
-                <div class="col-md-12 box wow fadeInRight" data-wow-delay="0.1s">
-                  <h4 class="title" id="Scales">Scales</a></h4>
-                  <p class="description">To our knowledge, our dataset far surpasses similar ones in terms of the number of actors, costumes, actions, clarity, and overall data volume.</p>
-                  <center>
-                  <a href="assets/img/Fig1_2.png"><img src="assets/img/scale.jpg" width="1000"></a><br></center>
-  
-                </div>
-  
 
-                <div class="col-md-12 box wow fadeInLeft" data-wow-delay="0.1s">
-                  <h4 class="title" id="annotations">Annotation Pipeline</a></h4>
-                  <p class="description">Our dataset comes with off-the-shelf high-precision annotation, including 2D/3D human body keypoints, foreground masks, and SMPL-X models. We have implemented targeted optimization methods to achieve high accuracy in our results.
-                  </p>
-                    <div class="item item-steve">
-                      <video poster="assets/video/detail/AnnotationPipeline.mp4" id="steve" autoplay controls muted loop width="100%"><source src="assets/video/detail/AnnotationPipeline.mp4" type="video/mp4"></video>
-                    </div>
-  
-                </div>-->
-                <!--
-                <div class="col-md-12 box wow fadeInRight" data-wow-delay="0.1s">
-                  <h4 class="title">Rendering Benchmark</a></h4>
-                  <p class="description">We support : ……实验细节setting，分split结果和结论                        </p>
-                    <center>
-                    <a href="assets/img/Fig1_2.png"><img src="assets/img/novel_view_exp2.png" height="300"></a><br>
-                
+
+                <div class="col-md-12 box wow fadeInUp"  id="D4" data-wow-delay="0.1s">
+                  <h4 class="title">Action & Clothes  Distribution</a></h4>
+                  <p class="description">Regarding the action dimension, the subjects were divided into two types: special scene IDs and normal scene IDs. Special scene IDs performed actions from a special action library, including special costume performances, artistic movements, sports activities, etc. with 153 sub-categories.  Normal scene IDs performed actions from a normal daily activity library, including daily-life activities, simple exercises, and social communication, with 269 categories in total.</p>
+                  <p class="description">Each ID was equipped with a set of self-provided clothing and 2 sets of normal daily clothing from a fixed clothing library to ensure diversity. Individuals in special scenes wore corresponding special costumes. Our designed daily clothing library had a total of 529 items, covering all 50 clothing types in DeepFashion, with a random distribution of color, material, texture, and looseness for each clothing type. For each action, we had a description of the clothing, including type for upper, lower, and footwear.</p>
+                      <td></td><a href="assets/img/D3_2.png"><img src="assets/img/D3_2.png"  width="100%"></a></tr>
+
                 </div>
-  
-  
-                  <div class="col-md-12 box wow fadeInRight" data-wow-delay="0.1s">
-                    <h4 class="title" id="annotation">Amimation Benchmark</a></h4>
-                    <p class="description">Our dataset supports rendering-based novel view synthesis tasks. Most current human rendering methods can handle easy and medium difficulty levels, but still lack the capabilities to model the hard ones.                </p>
-                      <center>
-                      <a href="assets/img/Fig1_2.png"><img src="assets/img/novel_view_exp2.png" height="300"></a><br>
-                  
-                  </div>-->
-    
-  
+
+                <div class="col-md-12 box wow fadeInUp"  id="D5" data-wow-delay="0.1s">
+                  <h4 class="title">Matting Refinement</a></h4>
+                  <p class="description">We analyze the performance of the state-of-the-art background matting method Bisenet v2 and employ it to automatically detect and filter the green backgrounds out of the image. There are still several corner cases that prevent the learning-based matting method to generate clean and clear binary masks, leading to several kinds of problematic results, e.g., noisy backgrounds, broken bodies, and missing bodies and objects. To further improve the matting quality, we adopt the traditional computer vision algorithm GraphCut  to refine the predicted masks the overall error rate is reduced from 11% to 2%.</p>
+                      <td></td><a href="assets/img/D4.png"><img src="assets/img/D4.png"  width="100%"></a></tr>
+
+                </div>
+
+                <div class="col-md-12 box wow fadeInUp"  id="D6" data-wow-delay="0.1s">
+                  <h4 class="title">Testset Feature</a></h4>
+                  <p class="description">We analyze the performance of the state-of-the-art background matting method Bisenet v2 and employ it to automatically detect and filter the green backgrounds out of the image. There are still several corner cases that prevent the learning-based matting method to generate clean and clear binary masks, leading to several kinds of problematic results, e.g., noisy backgrounds, broken bodies, and missing bodies and objects. To further improve the matting quality, we adopt the traditional computer vision algorithm GraphCut  to refine the predicted masks the overall error rate is reduced from 11% to 2%.</p>
+                         <div class="container container_home">
+                          <center>
+                                     <video poster="assets/video/testset.mp4" id="steve" autoplay muted loop width="100%">
+                             <source src="assets/video/testset.mp4" type="video/mp4">
+                           </video></center>
+                                     <center><p>Test Set</p></center>
+                         </div>
+
+                </div>
             </div>
-  
           </div>
-          <br>
-          <br>
-        </div>
+          </div>
 
-      </section>
 
-    <!-- ======= Portfolio Section ======= -->
-    <!--
-      <div class="container" data-aos="fade-up">
-    <div class="row" data-aos="fade-up" data-aos-delay="100">
-    <div class="tabs is-toggle is-fullwidth" id="tabs" style="font-size: 17px !important; font-family: 'Google Sans', sans-serif;">
-      <ul>
-        <li  data-tab="0">
-          <a>
-            <span>All</span>
-          </a>
-        </li>
-        <li class="is-active" data-tab="1">
-          <a>
-            <span>Motion</span>
-          </a>
-        </li>
-        <li data-tab="2">
-          <a>
-            <span>Texture</span>
-          </a>
-        </li>
-        <li data-tab="3">
-          <a>
-            <span>Deformation</span>
-          </a>
-        </li>
-        <li data-tab="4">
-          <a>
-            <span>Interaction</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-      <div id="1-carousel" class="carousel tab-carousel">
-        <div class="item item-steve"><video poster="" id="steve" autoplay controls muted loop width="100%"><source src="assets/video/gallery/ type="video/mp4"></video></div>
-        <div class="item item-steve"><video poster="" id="steve" autoplay controls muted loop width="100%"><source src=".mp4" type="video/mp4"></video></div>
-        <div class="item item-steve"><video poster="" id="steve" autoplay controls muted loop width="100%"><source src=".mp4" type="video/mp4"></video></div>
-        <div class="item item-steve"><video poster="" id="steve" autoplay controls muted loop width="100%"><source src=".mp4" type="video/mp4"></video></div>
-        <div class="item item-steve"><video poster="" id="steve" autoplay controls muted loop width="100%"><source src="assets/video/gallery/4" type="video/mp4"></video></div>
+    </section>
 
-        <div class="item item-steve"><video poster="" id="steve" autoplay controls muted loop width="100%"><source src="assets/video/gallery/tch.mp4" type="video/mp4"></video></div>
-        <div class="item item-steve"><video poster="" id="steve" autoplay controls muted loop width="100%"><source src=".mp4" type="video/mp4"></video></div>
-        <div class="item item-steve"><video poster="" id="steve" autoplay controls muted loop width="100%"><source src=".mp4" type="video/mp4"></video></div>
-        <div class="item item-steve"><video poster="" id="steve" autoplay controls muted loop width="100%"><source src="assets/video/gallery/tch.mp4" type="video/mp4"></video></div>
-      </div>
-      <div id="2-carousel" class="carousel tab-carousel">
-        <div class="item item-steve"><video poster="" id="steve" autoplay controls muted loop width="100%"><source src="assets/video/gallery/tch.mp4" type="video/mp4"></video></div>
-        <div class="item item-steve"><video poster="" id="steve" autoplay controls muted loop width="100%"><source src=".mp4" type="video/mp4"></video></div>
-        <div class="item item-steve"><video poster="" id="steve" autoplay controls muted loop width="100%"><source src=".mp4" type="video/mp4"></video></div>
-        <div class="item item-steve"><video poster="" id="steve" autoplay controls muted loop width="100%"><source src=".mp4" type="video/mp4"></video></div>
-        <div class="item item-steve"><video poster="" id="steve" autoplay controls muted loop width="100%"><source src=".mp4" type="video/mp4"></video></div>
-        <div class="item item-steve"><video poster="" id="steve" autoplay controls muted loop width="100%"><source src="assets/video/gallery/p4" type="video/mp4"></video></div>
-      </div>
-
-      <div id="3-carousel" class="carousel tab-carousel">
-        <div class="item item-steve"><video poster="" id="steve" autoplay controls muted loop width="100%"><source src="assets/video/gallery/mp4" type="video/mp4"></video></div>
-        <div class="item item-steve"><video poster="" id="steve" autoplay controls muted loop width="100%"><source src=".mp4" type="video/mp4"></video></div>
-        <div class="item item-steve"><video poster="" id="steve" autoplay controls muted loop width="100%"><source src=".mp4" type="video/mp4"></video></div>
-        <div class="item item-steve"><video poster="" id="steve" autoplay controls muted loop width="100%"><source src=".mp4" type="video/mp4"></video></div>
-        <div class="item item-steve"><video poster="" id="steve" autoplay controls muted loop width="100%"><source src="assets/video/gallery/.mp4" type="video/mp4"></video></div>
-
-      </div>
-
-    <div id="4-carousel" class="carousel tab-carousel">
-      <div class="item item-steve"><video poster="" id="steve" autoplay controls muted loop width="100%"><source src="assets/video/gallery/h.mp4" type="video/mp4"></video></div>
-      <div class="item item-steve"><video poster="" id="steve" autoplay controls muted loop width="100%"><source src=".mp4" type="video/mp4"></video></div>
-      <div class="item item-steve"><video poster="" id="steve" autoplay controls muted loop width="100%"><source src=".mp4" type="video/mp4"></video></div>
-      <div class="item item-steve"><video poster="" id="steve" autoplay controls muted loop width="100%"><source src=".mp4" type="video/mp4"></video></div>
-      <div class="item item-steve"><video poster="" id="steve" autoplay controls muted loop width="100%"><source src=".mp4" type="video/mp4"></video></div>
-      <div class="item item-steve"><video poster="" id="steve" autoplay controls muted loop width="100%"><source src=".mp4" type="video/mp4"></video></div>
-      <div class="item item-steve"><video poster="" id="steve" autoplay controls muted loop width="100%"><source src=".mp4" type="video/mp4"></video></div>
-      <div class="item item-steve"><video poster="" id="steve" autoplay controls muted loop width="100%"><source src="assets/video/gallery/.mp4" type="video/mp4"></video></div>
-
-      </div>
-    </div>
-    -->
 
     <!-- ======= Services Section ======= -->
 
@@ -326,13 +258,7 @@
 
             </div>
           </div>
-               <div class="container container_home">
-       <center>
-                 <video poster="assets/video/testset.mp4" id="steve" autoplay controls muted loop width="80%">
-         <source src="assets/video/testset.mp4" type="video/mp4">
-       </video></center>
-                 <center><p>Test Set</p></center>
-     </div>
+
         </div>
 
       </div>
