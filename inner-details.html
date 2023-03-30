@@ -34,10 +34,14 @@
   <link rel="stylesheet" href="assets/css/bulma-slider.min.css">
   <link rel="stylesheet" href="assets/css/fontawesome.all.min.css">
   <link rel="stylesheet"href="assets/css/academicons.min.css">
-  <link rel="stylesheet" href="ass/css/index.css">-->
+  <link rel="stylesheet" href="assets/css/index.css">-->
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <script src="assets/js/bulma-slider.min.js"></script>
+  <script src="assets/js/index.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/main.js"></script>
 
   <!-- =======================================================
   * Template Name: Regna
@@ -160,16 +164,25 @@
 
             </div>
 
+            <div class="container ">
             <div class="row" id="D2">
 
 
                 <div class="col-md-12 box wow fadeInUp" data-wow-delay="0.1s">
                   <h4 class="title">Hi-fi Multiview</a></h4>
                   <p class="description" >A sample of our high-fi multi-view human videos.</p>
-                      <td></td><a href="assets/img/D2.png"><img class="listitemimage2" src="assets/img/D2.png" width="100%"></a></tr>
+                  <div class="content ">
+                        <a href="" target="_blank">
+                          <img class="cover" id="mag1" width="100%" src="assets/img/D2.jpg">
+                      </a>
+                      <script>magnify("mag1",5);</script>
+                  </div>
+                  <center><p>Hover mouse over the image for a zoomed-in view.</p></center>
+
                 </div>
 
 
+            </div>
             </div>
 
 
@@ -314,8 +327,6 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!--<script src="lib/jquery/jquery.min.js"></script>-->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/index.js"></script>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -329,7 +340,6 @@
   <script src="assets/js/bulma-carousel.min.js"></script>
   <!--<script src="lib/jquery/jquery-migrate.min.js"></script>-->
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
   <script>
 
 $(document).ready(function() {
