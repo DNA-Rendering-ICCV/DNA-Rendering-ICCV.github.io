@@ -152,6 +152,7 @@
                       <td></td><a href="assets/img/D1_1.png"><img src="assets/img/D1_1.png"  width="38%"></a></tr>
                       <td></td><a href="assets/img/D1_2.png"><img src="assets/img/D1_2.png"  width="62%"></a></tr>
                     </tr></table>
+                    <center><p>Left: bird-view of our capture system. Right: the arrangement of our high-resolution cameras.</p></center>
 
                 </div>
 
@@ -165,38 +166,50 @@
                   <h4 class="title">Hi-fi Multiview</a></h4>
                   <p class="description">A sample of our high-fi multi-view human videos.</p>
                       <td></td><a href="assets/img/D2.png"><img src="assets/img/D2.png"  width="100%"></a></tr>
-
                 </div>
 
 
             </div>
 
-            <div class="row">
+
+            <div class="row" id="D3">
+
 
                 <div class="col-md-12 box wow fadeInUp"  id="D3" data-wow-delay="0.1s">
                   <h4 class="title">ID Distribution</a></h4>
                   <p class="description">Our dataset has sufficient diversity in terms of people, clothing, actions, and interactive objects. We collected a total of 500 individuals, with 529 different sets of clothing, 269 different types of daily actions, and 153 different types of special performances, including relevant interactive objects for some actions. </p>
                   <p class="description">Regarding the people dimension, there were 500 actor instances with a ratio of 4:3:2:1 for Asian, Caucasian, Black, and Hispanic individuals, respectively, with a uniform distribution of gender and wide coverage of age and body shape distribution</p>
                       <td></td><a href="assets/img/D3.png"><img src="assets/img/D3.png"  width="100%"></a></tr>
+                    <center><p>The distribution of actors’ attributes including height, weight, and age.</p></center>
 
                 </div>
 
+
+            </div>
+
+            <div class="row" id="D4">
 
                 <div class="col-md-12 box wow fadeInUp"  id="D4" data-wow-delay="0.1s">
                   <h4 class="title">Action & Clothes  Distribution</a></h4>
                   <p class="description">Regarding the action dimension, the subjects were divided into two types: special scene IDs and normal scene IDs. Special scene IDs performed actions from a special action library, including special costume performances, artistic movements, sports activities, etc. with 153 sub-categories.  Normal scene IDs performed actions from a normal daily activity library, including daily-life activities, simple exercises, and social communication, with 269 categories in total.</p>
                   <p class="description">Each ID was equipped with a set of self-provided clothing and 2 sets of normal daily clothing from a fixed clothing library to ensure diversity. Individuals in special scenes wore corresponding special costumes. Our designed daily clothing library had a total of 529 items, covering all 50 clothing types in DeepFashion, with a random distribution of color, material, texture, and looseness for each clothing type. For each action, we had a description of the clothing, including type for upper, lower, and footwear.</p>
                       <td></td><a href="assets/img/D3_2.png"><img src="assets/img/D3_2.png"  width="100%"></a></tr>
+                    <center><p>Illustration of the action and clothes label distribution.</p></center>
 
                 </div>
 
+            </div>
+            <div class="row" id="D5">
                 <div class="col-md-12 box wow fadeInUp"  id="D5" data-wow-delay="0.1s">
                   <h4 class="title">Matting Refinement</a></h4>
                   <p class="description">We analyze the performance of the state-of-the-art background matting method Bisenet v2 and employ it to automatically detect and filter the green backgrounds out of the image. There are still several corner cases that prevent the learning-based matting method to generate clean and clear binary masks, leading to several kinds of problematic results, e.g., noisy backgrounds, broken bodies, and missing bodies and objects. To further improve the matting quality, we adopt the traditional computer vision algorithm GraphCut  to refine the predicted masks the overall error rate is reduced from 11% to 2%.</p>
                       <td></td><a href="assets/img/D4.png"><img src="assets/img/D4.png"  width="100%"></a></tr>
 
+
                 </div>
 
+            </div>
+            <div class="row" id="D6">
                 <div class="col-md-12 box wow fadeInUp"  id="D6" data-wow-delay="0.1s">
                   <h4 class="title">Testset Feature</a></h4>
                   <p class="description">our dataset has different levels of difficulty, with noticeable performance degradation in state-of-the-art methods when dealing with more complex actions, clothing deformations and textures, and finer levels of interactive object movements. Our dataset poses a greater challenge to cur rent novel view synthesis methods, and we hope that the DNA-Rendering dataset’s broad and realistic distribution of identity, clothing, and motion will strongly promote the development of this field. .</p>
@@ -209,6 +222,7 @@
                          </div>
 
                 </div>
+            </div>
             </div>
           </div>
           </div>
@@ -230,14 +244,16 @@
             <div class="box">
               <!--<div class="icon"><a href=""><i class="bi bi-briefcase"></i></a></div>-->
               <h4 class="title"><a href="inner-benchmark-novel-view.html">Novel View</a></h4>
-              <!--<p class="description">Novel View </p>-->
+                <td></td><a href="assets/img/img_novel_view.png"><img src="assets/img/img_novel_view.png"  width="100%"></a></tr>
+              <p class="description">Including NeuralVolumes, A-NeRF, NeuralBody, AnimatableNeRF, and HumanNeRF.</p>
             </div>
           </div>
           <div class="col-lg-6 col-md-6" data-aos="zoom-in">
             <div class="box">
               <!--<div class="icon"><a href=""><i class="bi bi-card-checklist"></i></a></div>-->
               <h4 class="title"><a href="inner-benchmark-novel-pose.html">Novel Pose</a></h4>
-              <!--<p class="description">Novel Pose</p>-->
+                <td></td><a href="assets/img/img_novel_pose.png"><img src="assets/img/img_novel_pose.png"  width="88%"></a></tr>
+              <p class="description">Including NeuralVolumes, A-NeRF, NeuralBody, AnimatableNeRF, and HumanNeRF.</p>
             </div>
           </div>
 
@@ -245,7 +261,8 @@
             <div class="box">
               <!--<div class="icon"><a href=""><i class="bi bi-binoculars"></i></a></div>-->
               <h4 class="title"><a href="inner-benchmark-novel-id.html">Novel ID</a></h4>
-              <!--<p class="description">Novel ID xxx</p>-->
+                <td></td><a href="assets/img/img_novel_id.png"><img src="assets/img/img_novel_id.png"  width="95%"></a></tr>
+              <p class="description">Including IBRNet, PixelNerf, VisionNerf, NHP, and KeyPointNerf.</p>
             </div>
           </div>
 
@@ -254,7 +271,8 @@
             <div class="box">
               <!--<div class="icon"><a href=""><i class="bi bi-binoculars"></i></a></div>-->
               <h4 class="title"><a href="inner-benchmark-cross-dataset.html">Cross Dataset</a></h4>
-              <!--<p class="description">Cross Dataset xxx</p>-->
+                <td></td><a href="assets/img/img_cross_dataset.png"><img src="assets/img/img_cross_dataset.png"  width="100%"></a></tr>
+              <p class="description">Including IBRNet, PixelNerf, VisionNerf on DNA-Rendering and other similar datasets.</p>
 
             </div>
           </div>
