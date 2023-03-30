@@ -218,3 +218,33 @@ border:0;
 marginwidth:0;
 marginheight:0;
 }
+
+/* Image maganify */
+* {box-sizing: border-box;}
+
+.img-magnifier-glass {
+  position: absolute;
+  z-index: 1;
+  border: 1px solid #5a6268;
+  border-radius: 0%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 300px;
+  height: 300px;
+  opacity:0;
+  pointer-events:none;
+}
+a:hover .img-magnifier-glass{
+  opacity:1;
+  /* pointer-events:initial; */
+}
+
+
+/* Style-mixing large slider */
+.mySlides {display: none}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
