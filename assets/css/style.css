@@ -713,6 +713,24 @@ section {
 /* Product Featuress Section
 --------------------------------*/
 
+
+#core-features .box {
+  padding: 20px 20px;
+  margin-bottom: 50px;
+  border: 1px solid #e6e6e6;
+  height: 95%;
+  position: relative;
+  background: #fafafa;
+}
+
+#features-comparison .box {
+  padding: 20px 20px;
+  margin-bottom: 50px;
+  border: 1px solid #e6e6e6;
+  height: 95%;
+  position: relative;
+  background: #fafafa;
+}
 #features {
   xxbackground: #fff;
   padding: 60px 0;
@@ -786,12 +804,16 @@ section {
   display: block;
   color: #2dc997;
 }
-
+#core-features .col-lg-counter5 {
+    flex: 0 0 auto;
+    width: 20%;
+}
 #core-features .counters p {
   padding: 0;
   margin: 0 0 20px 0;
+  text-align: center;
   font-family: "Poppins", sans-serif;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 #features-comparison {
@@ -850,11 +872,10 @@ section {
 }
 
 #services .box {
-  padding: 50px 20px;
-  margin-bottom: 50px;
+  padding: 20px 20px;
   text-align: center;
   border: 1px solid #e6e6e6;
-  height: 200px;
+  height: 95%;
   position: relative;
   background: #fafafa;
 }
@@ -1414,3 +1435,5 @@ tabs{-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-
   width: 100%;
   padding: 20px;
 }
+
+
