@@ -96,7 +96,7 @@
 
 <section id="backgound">
 <video autoplay muted loop id="myVideo">
-  <source id="teaser_vide" src="assets/video/teaser_crf20.mp4" type="video/mp4">
+  <source id="teaser_vide" src="assets/video/teaser_crf30.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
 </section>
@@ -111,8 +111,10 @@
       <h1>DNA-Rendering</h1>
       <h2>A Diverse Neural Actor Repository for High-Fidelity Human-centric Rendering</h2>
       <a href="#about" class="btn-get-started">Get Started</a>
-      <button id="myBtn" onclick="play_or_pause_function()" class="btn-get-started">Pause</button>
+      <button id="myBtn"  onclick="window.location.href='assets/video/teaser_25MB.mp4'" onmouseover="show_link_and_pause_function()"  onmouseout="show_pause_and_play_function()" class="btn-get-started">Pause</button>
+      <!--onclick="play_or_pause_function()"-->
     </div>
+
   </section>
   <!-- End Hero Section -->
 
@@ -167,13 +169,13 @@
       <div id="1-carousel" class="carousel tab-carousel">
 
 
-          <div class="item item-steve"><video class="listitemimage2" poster="assets/video/home/half/20220815_liuhan_f_liuhan_yf1_dz2.mp4" id="steve" autoplay  muted loop width="100%"><source src="assets/video/home/20220815_liuhan_f_liuhan_yf1_dz2.mp4" type="video/mp4"></video></div>
-          <div class="item item-steve"><video class="listitemimage2" poster="assets/video/home/half/20221021_liuziyu_m_liuziyu_yf1_dz1.mp4" id="steve" autoplay  muted loop width="100%"><source src="assets/video/home/20221021_liuziyu_m_liuziyu_yf1_dz1.mp4" type="video/mp4"></video></div>
-        <div class="item item-steve"><video class="listitemimage2" poster="assets/video/home/half/20220916_yuanhang_f_yuanhang_yf1_dz2.mp4" id="steve" autoplay  muted loop width="100%"><source src="assets/video/home/20220916_yuanhang_f_yuanhang_yf1_dz2.mp4" type="video/mp4"></video></div>
-        <div class="item item-steve"><video class="listitemimage2" poster="assets/video/home/half/20221219_YANA_f_YANA_yf2_dz4.mp4" id="steve" autoplay  muted loop width="100%"><source src="assets/video/home/20221219_YANA_f_YANA_yf2_dz4.mp4" type="video/mp4"></video></div>
-        <div class="item item-steve"><video class="listitemimage2" poster="assets/video/home/half/20220824_siqigong_m_siqigong_yf1_dz6.mp4" id="steve" autoplay  muted loop width="100%"><source src="assets/video/home/20220824_siqigong_m_siqigong_yf1_dz6.mp4" type="video/mp4"></video></div>
+          <div class="item item-steve"><a href="assets/video/home/src/20220815_liuhan_f_liuhan_yf1_dz2.mp4"><video class="listitemimage2" poster="assets/video/home/20220815_liuhan_f_liuhan_yf1_dz2.mp4" id="steve" autoplay  muted loop width="100%"><source src="assets/video/home/20220815_liuhan_f_liuhan_yf1_dz2.mp4" type="video/mp4"></video></a></div>
+          <div class="item item-steve"><a href="assets/video/home/src/20221021_liuziyu_m_liuziyu_yf1_dz1.mp4"><video class="listitemimage2" poster="assets/video/home/20221021_liuziyu_m_liuziyu_yf1_dz1.mp4" id="steve" autoplay  muted loop width="100%"><source src="assets/video/home/20221021_liuziyu_m_liuziyu_yf1_dz1.mp4" type="video/mp4"></video></a></div>
+        <div class="item item-steve"><a href="assets/video/home/src/20220916_yuanhang_f_yuanhang_yf1_dz2.mp4"><video class="listitemimage2" poster="assets/video/home/20220916_yuanhang_f_yuanhang_yf1_dz2.mp4" id="steve" autoplay  muted loop width="100%"><source src="assets/video/home/20220916_yuanhang_f_yuanhang_yf1_dz2.mp4" type="video/mp4"></video></a></div>
+        <div class="item item-steve"><a href="assets/video/home/src/20221219_YANA_f_YANA_yf2_dz4.mp4"><video class="listitemimage2" poster="assets/video/home/20221219_YANA_f_YANA_yf2_dz4.mp4" id="steve" autoplay  muted loop width="100%"><source src="assets/video/home/20221219_YANA_f_YANA_yf2_dz4.mp4" type="video/mp4"></video></a></div>
+        <div class="item item-steve"><a href="assets/video/home/src/20220824_siqigong_m_siqigong_yf1_dz6.mp4"><video class="listitemimage2" poster="assets/video/home/20220824_siqigong_m_siqigong_yf1_dz6.mp4" id="steve" autoplay  muted loop width="100%"><source src="assets/video/home/20220824_siqigong_m_siqigong_yf1_dz6.mp4" type="video/mp4"></video></a></div>
       </div>
-        <p>Our dataset contains 500 actors and covers a wide range of special performances and everyday actions, including a large variety of costumes, makeup, and interaction object types.</p>
+        <p>Our dataset contains 500 actors and covers a wide range of special performances and everyday actions, including a large variety of costumes, makeup, and interaction object types. Click video to view raw resolution video.</p>
 
     </div>
 
@@ -372,6 +374,14 @@
         video.pause();
         btn.innerHTML = "Play";
       }
+    }
+    function show_link_and_pause_function(){
+        btn.innerHTML = "View HD video";
+        video.pause();
+    }
+    function show_pause_and_play_function(){
+        btn.innerHTML = "Pause";
+        video.play();
     }
 
     var video = document.getElementById("myVideo");
